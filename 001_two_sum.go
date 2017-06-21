@@ -8,9 +8,8 @@ func twoSum(nums []int, target int) []int {
 		x := target - value
 		if key2, ok := hash[x]; ok {
 			return []int{key2, key}
-		} else {
-			hash[value] = key
 		}
+		hash[value] = key
 	}
 	return []int{0, 0}
 }
