@@ -7,8 +7,6 @@ func findDiagonalOrder(matrix [][]int) []int {
 	var result []int
 	var down bool
 
-	fmt.Println(len(matrix))
-
 	if len(matrix) == 0 {
 		return result
 	}
